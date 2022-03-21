@@ -1,0 +1,1 @@
+To run this program and create an executable called movies: gcc --std=gnu99 movies.c -o movies

@@ -1,0 +1,1 @@
+To run this code and create an executable called "movies_by_year": gcc --std=gnu99 files.c -o movies_by_year

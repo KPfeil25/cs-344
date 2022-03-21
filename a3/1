@@ -1,0 +1,143 @@
+PRE-SCRIPT INFO
+  Grading Script PID: 51240
+  Note: your smallsh will report a different PID when evaluating $$
+: BEGINNING TEST SCRIPT
+: 
+: --------------------
+: Using comment (5 points if only next prompt is displayed next)
+: : COMMENT SHOULD DO NOTHING
+: 
+: --------------------
+: ls (10 points for returning dir contents)
+: 1
+p3testscript
+smallsh
+smallsh.c
+: 
+: 
+: --------------------
+: ls out junk
+: : 
+: 
+: --------------------
+: cat junk (15 points for correctly returning contents of junk)
+: 1
+junk
+p3testscript
+smallsh
+smallsh.c
+: 
+: 
+: --------------------
+: wc in junk (15 points for returning correct numbers from wc)
+:  5  5 38
+: 
+: 
+: --------------------
+: wc in junk out junk2; cat junk2 (10 points for returning correct numbers from wc)
+: :  5  5 38
+: 
+: 
+: --------------------
+: test -f badfile (10 points for returning error value of 1, note extraneous &)
+: : exit value 1
+: 
+: 
+: --------------------
+: wc in badfile (10 points for returning text error)
+: Unable to open input file
+: No such file or directory
+: 
+: 
+: --------------------
+: badfile (10 points for returning text error)
+: badfile: no such file or directory
+: 
+: 
+: --------------------
+: sleep 100 background (10 points for returning process ID of sleeper)
+: background pid is 51291
+: 
+: 
+: --------------------
+: pkill -signal SIGTERM sleep (10 points for pid of killed process, 10 points for signal)
+: (Ignore message about Operation Not Permitted)
+: pkill: killing pid 23243 failed: Operation not permitted
+pkill: killing pid 45546 failed: Operation not permitted
+pkill: killing pid 45770 failed: Operation not permitted
+pkill: killing pid 46834 failed: Operation not permitted
+pkill: killing pid 47074 failed: Operation not permitted
+pkill: killing pid 47126 failed: Operation not permitted
+pkill: killing pid 47273 failed: Operation not permitted
+pkill: killing pid 47898 failed: Operation not permitted
+pkill: killing pid 48444 failed: Operation not permitted
+pkill: killing pid 49665 failed: Operation not permitted
+pkill: killing pid 50257 failed: Operation not permitted
+pkill: killing pid 50557 failed: Operation not permitted
+pkill: killing pid 50666 failed: Operation not permitted
+pkill: killing pid 50890 failed: Operation not permitted
+pkill: killing pid 51142 failed: Operation not permitted
+pkill: killing pid 51154 failed: Operation not permitted
+pkill: killing pid 51157 failed: Operation not permitted
+pkill: killing pid 51194 failed: Operation not permitted
+pkill: killing pid 228581 failed: Operation not permitted
+pkill: killing pid 228583 failed: Operation not permitted
+pkill: killing pid 228599 failed: Operation not permitted
+pkill: killing pid 228607 failed: Operation not permitted
+pkill: killing pid 236016 failed: Operation not permitted
+pkill: killing pid 236018 failed: Operation not permitted
+pkill: killing pid 236036 failed: Operation not permitted
+pkill: killing pid 236041 failed: Operation not permitted
+pkill: killing pid 238305 failed: Operation not permitted
+pkill: killing pid 238309 failed: Operation not permitted
+pkill: killing pid 238324 failed: Operation not permitted
+pkill: killing pid 238330 failed: Operation not permitted
+pkill: killing pid 269360 failed: Operation not permitted
+child 51291 terminated
+terminated by signal 15
+: 
+: 
+: --------------------
+: sleep 1 background (10 pts for pid of bg ps when done, 10 for exit value)
+: background pid is 51302
+: child 51302 terminated
+exit value 0
+: 
+: 
+: --------------------
+: pwd
+: /nfs/stak/users/pfeilke/cs344/a3
+: 
+: 
+: --------------------
+: cd
+: : 
+: 
+: --------------------
+: pwd (10 points for being in the HOME dir)
+: /nfs/stak/users/pfeilke
+: 
+: 
+: --------------------
+: mkdir 51241
+: : 
+: 
+: --------------------
+: cd 51241
+: : 
+: 
+: --------------------
+: pwd (5 points for being in the newly created dir)
+: /nfs/stak/users/pfeilke/51241
+: --------------------
+: background pid is 51337
+: Entering foreground-only mode (& is now ignored)
+: Testing foreground-only mode (20 points for entry
+Wed Nov  4 22:17:06 PST 2020
+child 51337 terminated
+exit value 0
+child 51338 terminated
+exit value 0
+: : Wed Nov  4 22:17:11 PST 2020
+: Exiting foreground-only mode
+: 

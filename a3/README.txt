@@ -1,0 +1,1 @@
+to compile and create an executable called smallsh: gcc --std=gnu99 smallsh.c -o smallsh
